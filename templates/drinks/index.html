@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>PIVO</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <div style="float: right;">
+      <video width="1400px" height="930px" autoplay loop>
+        <source src="{% static 'img/pivo.mp4' %}">
+      </video>
+      </div>      
+    <div class="beer-list">
+        <div class="beer-item">
+          {% for beer in beers %} 
+          <h2 class="beer-name">{{ beer.name }} {{ beer.fortress }}&deg;-{{ beer.price }}</h2>
+          <p class="beer-description">{{ beer.brewery }}</p>
+          {% endfor %}
+        </div>
+    </div>     
+</body>
+</html>
+
+
