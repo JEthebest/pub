@@ -1,26 +1,66 @@
-html {
-  background-color: #050505;
-}
-.beer-item {
-  width: 400px;
-  height: 20px;
-  margin: 10px;
-  padding: 25px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px ;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.beer-name {
-  margin-top: 0;
-  border-bottom: 1px solid #f3eded;
-  color: #d4cfcf;
-}
-
-.beer-description {
-  font-size: 14px;
-  color: #d4cfcf;
-  line-height: 1.3;
+html { 
+  background-color: #050505; 
+} 
+.beer-item { 
+  width: 400px; 
+  height: 20px; 
+  margin: 10px; 
+  padding: 25px; 
+  border-radius: 5px; 
+  box-shadow: 0px 0px 10px ; 
+  text-align: center; 
+  white-space: nowrap; 
+} 
+ 
+.beer-name { 
+  margin-top: 0; 
+  border-bottom: 1px solid #f3eded; 
+  color: #d4cfcf; 
+} 
+ 
+.beer-description { 
+  font-size: 14px; 
+  color: #d4cfcf; 
+  line-height: 1.3; 
+} 
+/* стили для видео на экранах с шириной меньше 768px */ 
+@media (max-width: 768px) { 
+  .video { 
+    width: 100%; 
+    height: auto; 
+  } 
+} 
+ 
+/* стили для видео на экранах с шириной меньше 1024px */ 
+@media (max-width: 1024px) { 
+  .video { 
+    width: 80%; 
+    height: auto; 
+  } 
+} 
+ 
+/* стили для видео на экранах с шириной меньше 1440px */ 
+@media (max-width: 1440px) { 
+  .video { 
+    width: 60%; 
+    height: auto; 
+  } 
+} 
+ 
+/* стили для видео на экранах с шириной больше или равной 1440px */ 
+@media (min-width: 1440px) { 
+  .video { 
+    width: 1400px; 
+    height: 930px; 
+  } 
+} 
+ 
+ 
+/* стили для видео на экранах с шириной больше или равной 1440px */ 
+@media (min-width: 1440px) { 
+  .video { 
+    width: 1000px; 
+    height: 800px; 
+  } 
 }
   
