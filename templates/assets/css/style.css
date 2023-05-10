@@ -14,13 +14,21 @@ html {
  
 .beer-name { 
   margin-top: 0; 
-  border-bottom: 1px solid #f3eded; 
-  color: #d4cfcf; 
+  border-bottom: 3px solid #ffffff; 
+  color: #ffffff; 
+  font-size: 28px; 
+
+} 
+.number { 
+  color: yellow; /* Установка желтого цвета для цифр */ 
 } 
  
+.price { 
+  color: yellow; /*  белого цвета для цены */ 
+} 
 .beer-description { 
   font-size: 14px; 
-  color: #d4cfcf; 
+  color: #ffffff; 
   line-height: 1.3; 
 } 
 /* стили для видео на экранах с шириной меньше 768px */ 
@@ -53,17 +61,14 @@ html {
     width: 1400px; 
     height: 930px; 
   } 
-} 
- 
- 
+
 /* стили для видео на экранах с шириной больше или равной 1440px */ 
 @media (min-width: 1440px) { 
   .video { 
     width: 1000px; 
     height: 800px; 
   } 
-}
-
+} 
 
 .video-container { 
   grid-area: video; 
@@ -71,10 +76,9 @@ html {
   overflow: hidden; 
 } 
 
-
 .video-container video { 
   width: 100%; 
   height: auto; 
   display: block; 
 }
-  
+}
